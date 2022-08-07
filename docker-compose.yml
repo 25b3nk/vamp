@@ -1,0 +1,16 @@
+---
+version: '3'
+services:
+  broker:
+    image: apachepulsar/pulsar:2.10.1
+    container_name: broker
+    ports:
+      - "6650:6650"
+      - "8080:8080"
+    volumes:
+      - pulsardata:/pulsar/data
+      - pulsarconf:/pulsar/conf
+    entrypoint: bin/pulsar standalone
+volumes:
+  pulsardata:
+  pulsarconf:
