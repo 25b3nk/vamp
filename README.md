@@ -22,3 +22,19 @@ $ make install
 ```
 
 
+## To do
+
+- [x] Test the frames received from webcam
+- [x] Use serializer for golang to send frame data along with other metadata in pulsar
+- [ ] Populate all the serdes into common utils package
+- [ ] Finish `detector`, which takes input from `source` and outputs to new stream, with id to source message
+- [ ] Use the detection data from stream in `postprocess` and fetch the corresponding image from `source` stream
+- [ ] Finally dump dummy events to new stream from `postprocess`
+
+
+## References
+
+1. https://pulsar.apache.org/docs/
+1. https://pkg.go.dev/github.com/apache/pulsar-client-go/pulsar#section-documentation
+1. https://pulsar.apache.org/docs/client-libraries-go/
+1. https://pulsar.apache.org/docs/schema-understand
