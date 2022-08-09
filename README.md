@@ -1,4 +1,4 @@
-# Mock pipeline for video analytics
+# Video Analytics Mock Pipeline (VAMP)
 
 ## Introduction
 Mock pipeline which will mimic a real-time video analytics pipeline, where we have four services,
@@ -7,7 +7,14 @@ Mock pipeline which will mimic a real-time video analytics pipeline, where we ha
 3. Postprocess, which uses object detection information to perform further analytics and events
 4. Business logic, where we apply business logic on the events generated from tracker
 
+
 ## Using pulsar as the message bus
+
+### Notes
+
+1. Pulsar message batch size is by default 128KB, need to increase it if we are sending image data
+1. Pulsar consumer is by default in blocking mode, to set a timeout, we can set timeout in the context we send
+
 
 ## GoCV
 

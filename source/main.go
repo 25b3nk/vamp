@@ -45,7 +45,6 @@ var (
 				{ "name" : "height" , "type" : "int" },
 				{ "name" : "matType" , "type" : "int" },
 				{ "name" : "data" , "type" : "bytes" }
-
 			]
 		}
 	`
