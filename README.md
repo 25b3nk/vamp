@@ -37,6 +37,8 @@ $ make install
 - [ ] Finish `detector`, which takes input from `source` and outputs to new stream, with id to source message
 - [ ] Use the detection data from stream in `postprocess` and fetch the corresponding image from `source` stream
 - [ ] Finally dump dummy events to new stream from `postprocess`
+- [ ] Separate out each module to different repo and use git modules to keep in this repo
+- [ ] Create a docker-compose to run the pipeline
 
 
 ## References
