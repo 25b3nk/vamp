@@ -1,4 +1,4 @@
-package serdes
+package common
 
 // TODO: Move all the common serializer-deserializer stuff here
 

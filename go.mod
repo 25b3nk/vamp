@@ -1,4 +1,4 @@
-module 25b3nk/ml_test_pipeline
+module "github.com/25b3nk/vamp"
 
 go 1.19
 
