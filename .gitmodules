@@ -4,3 +4,9 @@
 [submodule "detector"]
 	path = detector
 	url = https://github.com/25b3nk/vamp_detector
+[submodule "postprocess"]
+	path = postprocess
+	url = https://github.com/25b3nk/vamp_pp.git
+[submodule "businesslogic"]
+	path = businesslogic
+	url = https://github.com/25b3nk/vamp_bl.git
