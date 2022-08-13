@@ -40,18 +40,32 @@ const (
 		}
 	`
 
-	// TODO: Create avro schema for the metadata, maybe there is automatic way to create ?
 	AvroMetadataScheme = `
-		{
-			"type" : "record",
-			"namespace" : "VAMP",
-			"name" : "metadata",
-			"fields" : [
-				{ "name" : "id" , "type" : "int" },
-				{ "name" : "num_of_detections" , "type" : "int" },
-				{ "name" : "height" , "type" : "int" },
-				{ "name" : "mat_type" , "type" : "int" },
-				{ "name" : "data" , "type" : "bytes" }
+        {
+            "type" : "record",
+            "namespace" : "VAMP",
+            "name" : "metadata",
+            "fields" : [
+                { "name" : "id" , "type" : "int" },
+                { "name" : "num_of_detections" , "type" : "int" },
+                {
+                    "name" : "detections",
+                    "type" : {
+                        "type" : "array",
+                        "items" : {
+                            "type" : "record",
+                            "name" : "detectiondata",
+                            "fields" : [
+                                { "name" : "x" , "type" : "int" },
+                                { "name" : "y" , "type" : "int" },
+                                { "name" : "width" , "type" : "int" },
+                                { "name" : "height" , "type" : "int" },
+                                { "name" : "class_id" , "type" : "int" },
+                                { "name" : "class_name" , "type" : "string" }
+                            ]
+                        }
+                    }
+                }
 			]
 		}
 	`
