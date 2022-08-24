@@ -48,6 +48,7 @@ make install
 - [ ] Finally dump dummy events to new stream from `postprocess`
 - [x] Separate out each module to different repo and use git modules to keep in this repo
 - [ ] Create a docker-compose to run the pipeline
+- [ ] Use `gRPC` to get model predictions
 
 
 ## References
